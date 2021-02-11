@@ -41,7 +41,10 @@ int main()
 					break;
 				case 'p':
 					printf("%f %c %f = ", firstNumb, op, secondNumb);
-					powers(firstNumb, secondNumb);
+					printf("The second Number will be converted to a integer\n");
+					int myInt;
+					myInt = (int)secondNumb;
+					powers(firstNumb, myInt);
 					break;
 				case 'r':
 					printf("%f %c %f = ", firstNumb, op, secondNumb);
