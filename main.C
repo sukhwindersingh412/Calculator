@@ -39,7 +39,7 @@ int main()
 					break;
 				case 'p':
     	        
-					power(firstNumb, secondNumb);
+					powers(firstNumb, secondNumb);
     	        
 					break;
 				case 'r':
