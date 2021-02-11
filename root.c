@@ -2,8 +2,8 @@
 #include<math.h>
 
 
-float root(int x, int y){
+float root(float x, float y){
     float z = pow(x, 1.0/y);
-    printf("%d ^ 1/%d = %f \n", y,x,z);
+    printf("%.2f ^ 1.00/%.2f = %.2f \n", x,y,z);
     return z; 
 }
