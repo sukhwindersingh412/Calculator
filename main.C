@@ -19,27 +19,27 @@ int main()
 			scanf("%c", &op);
 
 			printf("Enter two operands: ");
-			scanf("%lf %lf", &firstNumb, &secondNumb);
+			scanf("%f %f", &firstNumb, &secondNumb);
 			
 			switch(op)
 			{
 				case '+':
-    	        			printf("%f %c %f= %f", firstNumb, op, socndNumb, addition(firstNumb, secondNumb));
+    	        			printf("%f %c %f = %f", firstNumb, op, secondNumb, addition(firstNumb, secondNumb));
 					break;
 				case '-':
-					printf("%f %c %f= %f", firstNumb, op, socndNumb, subtraction(firstNumb, secondNumb));
-					break
+					printf("%f %c %f = %f", firstNumb, op, secondNumb, subtraction(firstNumb, secondNumb));
+					break;
 				case '*':
-    	        			printf("%f %c %f= %f", firstNumb, op, socndNumb, multiplication(firstNumb, secondNumb));
+    	        			printf("%f %c %f = %f", firstNumb, op, secondNumb, multiplication(firstNumb, secondNumb));
 					break;
 				case '/':
-					printf("%f %c %f= %f", firstNumb, op, socndNumb, division(firstNumb, secondNumb));
+					printf("%f %c %f = %f", firstNumb, op, secondNumb, division(firstNumb, secondNumb));
 					break;
 				case 'p':
-					printf("%f %c %f= %f", firstNumb, op, socndNumb, powers(firstNumb, secondNumb));
+					printf("%f %c %f = %f", firstNumb, op, secondNumb, powers(firstNumb, secondNumb));
 					break;
 				case 'r':
-					printf("%f %c %f= %f", firstNumb, op, socndNumb, root(firstNumb, secondNumb));
+					printf("%f %c %f = %f", firstNumb, op, secondNumb, root(firstNumb, secondNumb));
 					break;
 			}
 			printf("\n");
