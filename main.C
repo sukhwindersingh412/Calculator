@@ -1,6 +1,8 @@
+#include <stdio.h>
+
 int main()
 {
-	double firstNumb, secondNumb;
+	float firstNumb, secondNumb;
     
 	char operator;
    
@@ -17,22 +19,22 @@ int main()
 			{
 				case '+':
     	        
-					add(firstNumb, secondNumb);
+					addition(firstNumb, secondNumb);
     	        
 					break;
 				case '-':
     	        
-					sub(firstNumb, secondNumb);
+					subtraction(firstNumb, secondNumb);
     	        
 					break;
 				case '*':
     	        
-					mult(firstNumb, secondNumb);
+					mulitplication(firstNumb, secondNumb);
     	        
 					break;
 				case '/':
     	        
-					divide(firstNumb, secondNumb);
+					division(firstNumb, secondNumb);
     	        
 					break;
 				case 'p':
