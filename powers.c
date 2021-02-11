@@ -10,8 +10,9 @@ float powers(float base, int N) {
         }
         
         base = base * base; //accumulate bases 
-        N = N >> 1; //bit shift n so that N is decremented
+        N = N >> 1; //bit shift n so that N is decremented 
     }
+    printf("The base was %f, the power was %d, The result was %f. \n", base, N, result);
     return result;
     
 }
