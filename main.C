@@ -24,22 +24,28 @@ int main()
 			switch(op)
 			{
 				case '+':
-    	        			printf("%f %c %f = %f", firstNumb, op, secondNumb, addition(firstNumb, secondNumb));
+    	        			printf("%f %c %f = ", firstNumb, op, secondNumb);
+					addition(firstNumb, secondNumb);
 					break;
 				case '-':
-					printf("%f %c %f = %f", firstNumb, op, secondNumb, subtraction(firstNumb, secondNumb));
+					printf("%f %c %f = ", firstNumb, op, secondNumb);
+					subtraction(firstNumb, secondNumb)
 					break;
 				case '*':
-    	        			printf("%f %c %f = %f", firstNumb, op, secondNumb, multiplication(firstNumb, secondNumb));
+    	        			printf("%f %c %f = ", firstNumb, op, secondNumb);
+					multiplication(firstNumb, secondNumb);
 					break;
 				case '/':
-					printf("%f %c %f = %f", firstNumb, op, secondNumb, division(firstNumb, secondNumb));
+					printf("%f %c %f = ", firstNumb, op, secondNumb);
+					division(firstNumb, secondNumb);
 					break;
 				case 'p':
-					printf("%f %c %f = %f", firstNumb, op, secondNumb, powers(firstNumb, secondNumb));
+					printf("%f %c %f = ", firstNumb, op, secondNumb);
+					powers(firstNumb, secondNumb);
 					break;
 				case 'r':
-					printf("%f %c %f = %f", firstNumb, op, secondNumb, root(firstNumb, secondNumb));
+					printf("%f %c %f = ", firstNumb, op, secondNumb);
+					root(firstNumb, secondNumb);
 					break;
 			}
 			printf("\n");
