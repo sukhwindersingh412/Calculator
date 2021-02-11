@@ -14,5 +14,4 @@ float powers(float base, int N) {
     }
     printf("The base was %f, the power was %d, The result was %f. \n", base, N, result);
     return result;
-    
 }
