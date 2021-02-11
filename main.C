@@ -1,51 +1,45 @@
 #include <stdio.h>
+#include "addition.c"
+#include "subtraction.c"
+#include "multiplication.c"
+#include "division.c"
+#include "powers.c"
+#include "root.c"
 
 int main()
 {
 	float firstNumb, secondNumb;
     
-	char operator;
+	char op;
    
 	for(;;)
    
 		{
 			printf("Enter function (+, -, *, /, p for power, r for root): ");
-			scanf("%c", &operator);
+			scanf("%c", &op);
 
 			printf("Enter two operands: ");
 			scanf("%lf %lf", &firstNumb, &secondNumb);
 			
-			switch(operator)
+			switch(op)
 			{
 				case '+':
-    	        
-					addition(firstNumb, secondNumb);
-    	        
+    	        			printf("%f %c %f= %f", firstNumb, op, socndNumb, addition(firstNumb, secondNumb));
 					break;
 				case '-':
-    	        
-					subtraction(firstNumb, secondNumb);
-    	        
-					break;
+					printf("%f %c %f= %f", firstNumb, op, socndNumb, subtraction(firstNumb, secondNumb));
+					break
 				case '*':
-    	        
-					mulitplication(firstNumb, secondNumb);
-    	        
+    	        			printf("%f %c %f= %f", firstNumb, op, socndNumb, multiplication(firstNumb, secondNumb));
 					break;
 				case '/':
-    	        
-					division(firstNumb, secondNumb);
-    	        
+					printf("%f %c %f= %f", firstNumb, op, socndNumb, division(firstNumb, secondNumb));
 					break;
 				case 'p':
-    	        
-					powers(firstNumb, secondNumb);
-    	        
+					printf("%f %c %f= %f", firstNumb, op, socndNumb, powers(firstNumb, secondNumb));
 					break;
 				case 'r':
-    	        
-					root(firstNumb, secondNumb);
-    	        
+					printf("%f %c %f= %f", firstNumb, op, socndNumb, root(firstNumb, secondNumb));
 					break;
 			}
 			printf("\n");
