@@ -1,4 +1,4 @@
-
+#include <math.h>
 
 float root(float x, float y){
     float z = pow(x, 1.0/y);
