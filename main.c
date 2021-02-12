@@ -29,7 +29,7 @@ int main()
 					break;
 				case '-':
 					printf("%f %c %f = ", firstNumb, op, secondNumb);
-					subtraction(firstNumb, secondNumb)
+					subtraction(firstNumb, secondNumb);
 					break;
 				case '*':
     	        			printf("%f %c %f = ", firstNumb, op, secondNumb);
