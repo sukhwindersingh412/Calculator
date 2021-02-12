@@ -17,5 +17,5 @@ install:
 script:
 
   - echo "Reached Script Section"
-  - gcc main.c -o output
+  - gcc main.c -lm -o output
   - ./output  
